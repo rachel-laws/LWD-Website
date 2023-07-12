@@ -1,0 +1,48 @@
+@use './variables' as *;
+
+//* Mixins
+
+// Clearfix
+@mixin clearfix {
+  position: absolute;
+  content: '';
+}
+
+// Media Queries
+
+// < Small Mobile Devices
+@mixin mqXSmall {
+  @media all and (max-width: 400px) {
+    @content;
+  }
+}
+
+// < Mobile Devices
+@mixin mqSmall {
+  @media all and (max-width: 480px) {
+    @content;
+  }
+}
+
+// < Tablets
+@mixin mqMedium {
+  @media all and (max-width: 768px) {
+    @content;
+  }
+}
+
+// > Laptops
+@mixin mqLarge {
+  @media all and (min-width: 1024px) {
+    @content;
+  }
+}
+
+// > Desktops
+@mixin mqXLarge {
+  @media all and (min-width: 1200px) {
+    @content;
+  }
+}
+
+// Animations

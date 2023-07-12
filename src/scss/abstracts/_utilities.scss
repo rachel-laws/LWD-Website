@@ -1,0 +1,21 @@
+@use './colors' as *;
+
+//* Utility Classes
+
+// Display
+
+.nav-visible {
+  display: flex;
+}
+
+.nav-hidden {
+  display: none;
+}
+
+// Headings
+
+// Cards
+
+.card {
+  background: $card-bg;
+}
