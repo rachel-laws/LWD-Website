@@ -124,7 +124,9 @@ const animateHeader = () => {
   }, 2000);
 };
 
-document.addEventListener('DOMContentLoaded', animateHeader);
+if (headerTitle) {
+  document.addEventListener('DOMContentLoaded', animateHeader);
+}
 
 // Slide-in Cards
 
@@ -174,6 +176,7 @@ if (timePickerHour) {
 
 // Request consultation checkbox
 const requestBtn = document.querySelector('#consult_request');
+const consultSchedule = document.querySelector('#consultSchedule');
 
 if (requestBtn) {
   requestBtn.addEventListener('change', e => {
