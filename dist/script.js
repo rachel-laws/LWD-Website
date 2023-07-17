@@ -45,58 +45,58 @@ const showNavbar = navLinks => {
   navLinks.classList.add('nav-visible');
 };
 
-//! Highlight Active Page
-
-// navLink.forEach(link => {
-//   if (link.href === window.location.href) {
-//     link.setAttribute('aria-current', 'page');
-//   }
-// });
-
-// document.addEventListener('DOMContentLoaded', e => {
-//   const homeURL = 'https:/lawsonwebdevelopment.com/';
-//   const servicesURL = 'https:/lawsonwebdevelopment.com/services/';
-//   const pricingURL = 'https:/lawsonwebdevelopment.com/pricing/';
-//   const contactURL = 'https:/lawsonwebdevelopment.com/contact/';
-//   const termsURL = 'https:/lawsonwebdevelopment.com/terms-of-service/';
-//   const privacyURL = 'https:/lawsonwebdevelopment.com/privacy-policy/';
-
-//   const currentURL = window.location.href;
-
-//   navLink.forEach(link => {
-//     const href = link.getAttribute('href');
-
-//     if (
-//       href === homeURL ||
-//       href === servicesURL ||
-//       href === pricingURL ||
-//       href === contactURL ||
-//       href === termsURL ||
-//       href === privacyURL
-//     ) {
-//       href === currentURL
-//         ? link.setAttribute('aria-current', 'page')
-//         : link.removeAttribute('aria-current');
-//     }
-//   });
-// });
-
 // Highlight Active Page
 
-document.addEventListener('DOMContentLoaded', () => {
-  const navLinks = document.querySelectorAll('.nav-link');
+navLink.forEach(link => {
+  if (link.href === window.location.href) {
+    link.setAttribute('aria-current', 'page');
+  }
+});
+
+document.addEventListener('DOMContentLoaded', e => {
+  const homeURL = 'https:/lawsonwebdevelopment.com/';
+  const servicesURL = 'https:/lawsonwebdevelopment.com/services/';
+  const pricingURL = 'https:/lawsonwebdevelopment.com/pricing/';
+  const contactURL = 'https:/lawsonwebdevelopment.com/contact/';
+  const termsURL = 'https:/lawsonwebdevelopment.com/terms-of-service/';
+  const privacyURL = 'https:/lawsonwebdevelopment.com/privacy-policy/';
+
   const currentURL = window.location.href;
 
-  navLinks.forEach(link => {
+  navLink.forEach(link => {
     const href = link.getAttribute('href');
 
-    if (href === currentURL) {
-      link.setAttribute('aria-current', 'page');
-    } else {
-      link.removeAttribute('aria-current');
+    if (
+      href === homeURL ||
+      href === servicesURL ||
+      href === pricingURL ||
+      href === contactURL ||
+      href === termsURL ||
+      href === privacyURL
+    ) {
+      href === currentURL
+        ? link.setAttribute('aria-current', 'page')
+        : link.removeAttribute('aria-current');
     }
   });
 });
+
+//! Highlight Active Page
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   const navLinks = document.querySelectorAll('.nav-link');
+//   const currentURL = window.location.href;
+
+//   navLinks.forEach(link => {
+//     const href = link.getAttribute('href');
+
+//     if (href === currentURL) {
+//       link.setAttribute('aria-current', 'page');
+//     } else {
+//       link.removeAttribute('aria-current');
+//     }
+//   });
+// });
 
 // Header Animation
 
