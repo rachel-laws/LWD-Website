@@ -47,7 +47,6 @@ nav {
     position: relative;
     width: min-content;
     transition: $ease;
-    padding-top: 40px;
 
     &::after {
       @include clearfix;

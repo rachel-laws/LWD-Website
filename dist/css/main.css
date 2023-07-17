@@ -1376,7 +1376,6 @@ nav a {
   position: relative;
   width: min-content;
   transition: 150ms ease;
-  padding-top: 40px;
 }
 
 nav a::after {
