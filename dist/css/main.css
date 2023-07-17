@@ -1054,11 +1054,6 @@ input[type=submit] {
   transition: 150ms ease;
 }
 
-.header__button::after {
-  z-index: -1;
-  animation: glow 5s ease infinite 5s;
-}
-
 .header__button:hover, .header__button:focus-visible {
   border-color: #fefefe;
   outline-color: #fefefe;
@@ -1332,7 +1327,7 @@ header {
   position: absolute;
   content: "";
   inset: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.2039215686) 15%, rgba(0, 0, 0, 0.062745098) 30%);
+  background: linear-gradient(rgba(0, 0, 0, 0.1960784314) 20%, rgba(0, 0, 0, 0.0235294118) 60%);
 }
 
 @media all and (max-width: 750px) {

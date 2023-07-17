@@ -101,7 +101,7 @@ header {
     &::after {
       @include clearfix;
       inset: 0;
-      background: linear-gradient(#00000034 15%, #00000010 30%);
+      background: linear-gradient(#00000032 20%, #00000006 60%);
 
       @include mqMobile {
         background: linear-gradient(#00000092 30%, #00000010 50%);

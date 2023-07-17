@@ -70,10 +70,11 @@ input[type='submit'] {
     transition: $ease;
   }
 
-  &::after {
-    z-index: -1;
-    animation: glow 5s ease infinite 5s;
-  }
+  // &::after {
+  //   -webkit-backface-visibility: hidden;
+  //   backface-visibility: hidden;
+  //   animation: glow 5s ease infinite 5s;
+  // }
 
   &:hover,
   &:focus-visible {
