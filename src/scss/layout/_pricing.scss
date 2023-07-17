@@ -95,7 +95,24 @@
   border: $card-border;
   box-shadow: $card-shadow;
 
-  @include mqSmall {
-    padding: 2.25rem 1.5rem;
+  @include mqMobile {
+    padding: 1.75rem 2rem;
   }
+
+  @include mqSmall {
+    padding: 2rem 1rem;
+  }
+
+  ol {
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+
+  li:not(:last-of-type) {
+    padding-bottom: 0.5rem;
+  }
+}
+
+.pricing__card-last p:last-of-type {
+  margin-top: 1rem;
 }

@@ -1224,7 +1224,6 @@ header {
 .header__title,
 .header__subtitle {
   z-index: 2;
-  opacity: 0;
   transform: translateY(100%);
   max-width: 42rem;
   width: 100%;
@@ -1251,6 +1250,7 @@ header {
   position: relative;
   z-index: 2;
   gap: 2rem;
+  opacity: 1;
 }
 
 @media all and (max-width: 1080px) {
@@ -2082,11 +2082,29 @@ nav img {
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 750px) {
   .pricing__card {
-    padding: 2.25rem 1.5rem;
+    padding: 1.75rem 2rem;
   }
 }
+@media all and (max-width: 400px) {
+  .pricing__card {
+    padding: 2rem 1rem;
+  }
+}
+.pricing__card ol {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.pricing__card li:not(:last-of-type) {
+  padding-bottom: 0.5rem;
+}
+
+.pricing__card-last p:last-of-type {
+  margin-top: 1rem;
+}
+
 .cta__question-contact {
   width: max-content;
   gap: 1rem;
