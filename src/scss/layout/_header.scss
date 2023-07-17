@@ -24,10 +24,10 @@ header {
 
 .header__title,
 .header__subtitle {
-  z-index: 2;
-  transform: translateY(100%);
+  transform: translateY(200%);
   max-width: 42rem;
   width: 100%;
+  z-index: 2;
 
   @include mqMedium {
     max-width: 20rem;
@@ -45,16 +45,15 @@ header {
 
 .header__text-container {
   position: relative;
-  z-index: 2;
   gap: 2rem;
-  opacity: 1;
+  opacity: 0;
+  z-index: 2;
 
   @include mqMedium {
     align-items: stretch;
   }
 }
 
-// TODO: Fix flashing on zoom
 .header__text {
   color: $white-txt;
   background: $dark-bg;

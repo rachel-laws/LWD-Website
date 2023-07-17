@@ -105,7 +105,6 @@ const headerSubtitle = document.querySelector('#headerSubtitle');
 const headerText = document.querySelector('#headerText');
 
 const animateHeader = () => {
-  headerText.style.opacity = '0';
   setTimeout(function () {
     headerTitle.style.opacity = '1';
     headerTitle.style.transform = 'translateY(0)';
@@ -119,8 +118,8 @@ const animateHeader = () => {
   }, 1000);
 
   setTimeout(function () {
-    headerText.classList.add('fadeIn');
     headerText.style.opacity = '1';
+    headerText.classList.add('fadeIn');
   }, 2000);
 };
 

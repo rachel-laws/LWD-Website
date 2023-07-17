@@ -25,36 +25,58 @@ input[type='submit'] {
 .cta__links .btn {
   padding: 0.9rem 1.75rem;
   background: $dark-bg;
-  text-shadow: -2px 2px black;
+  text-shadow: $btn-txt-shadow;
   min-width: max-content;
+  outline: 1px solid $outline;
+  outline-offset: -6px;
+
+  @include mqMedium {
+    width: 15.5rem;
+  }
 
   &:hover,
   &:focus-visible {
     border-color: $white-txt;
+    outline-color: $white-txt;
   }
 
   &:active {
-    transform: translateX(-4px);
+    outline-color: $gold;
+    border-color: $gold;
   }
 }
 
 // Header Button
 
 .header__button {
+  overflow: hidden;
+  position: relative;
   padding: 0.5rem 1.75rem 0.8rem;
-  text-shadow: -2px 2px black;
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 0.75px;
   background: $dark-bg;
   border: $btn-border;
   outline: 1px solid $outline;
-  text-align: center;
   outline-offset: -7px;
-  animation: glow 5s ease infinite 5s;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.75px;
+  text-shadow: $btn-txt-shadow;
   transition: $ease;
 
-  &:hover {
+  &::after,
+  &::before {
+    @include clearfix;
+    inset: 0;
+    transition: $ease;
+  }
+
+  &::after {
+    z-index: -1;
+    animation: glow 5s ease infinite 5s;
+  }
+
+  &:hover,
+  &:focus-visible {
     border-color: $white-txt;
     outline-color: $white-txt;
     box-shadow: 0px 0px 10px #fef8e7, 0px 0px 20px #fef8e7,
@@ -62,7 +84,8 @@ input[type='submit'] {
   }
 
   &:active {
-    background: $gold;
+    outline-color: $gold;
+    border-color: $gold;
   }
 
   i {
@@ -125,7 +148,6 @@ input[type='submit'] {
   }
 
   &:active {
-    transform: translateX(4px);
     background: $light-gold;
   }
 }
