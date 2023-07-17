@@ -1,21 +1,97 @@
-@use './colors' as *;
+@use '../abstracts/mixins' as *;
+@use '../abstracts/colors' as *;
 
-//* Utility Classes
+// Utility Classes
 
-// Display
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+
+  @include mqMedium {
+    flex-direction: column;
+  }
+
+  @include mqMobile {
+    gap: 1rem;
+  }
+
+  h1,
+  h2 {
+    text-align: left;
+
+    @include mqMedium {
+      text-align: center;
+    }
+  }
+}
+
+.block {
+  display: block;
+
+  @include mqMedium {
+    display: inline;
+  }
+}
+
+// JS
 
 .nav-visible {
   display: flex;
+  animation: slideIn 200ms ease 1;
 }
 
 .nav-hidden {
-  display: none;
+  @include mqMobile {
+    animation: slideOut 200ms ease 1;
+  }
 }
 
-// Headings
+.header-animate {
+  animation: raise 800ms ease 1;
+}
 
-// Cards
+.fadeIn {
+  animation: fadeIn 1000ms ease 1;
+}
 
-.card {
-  background: $card-bg;
+// a11y
+
+.required-input {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '*';
+    top: 0;
+    left: -0.45rem;
+    font-size: 1.2rem;
+    color: $placeholder-txt;
+  }
+}
+
+.sr-only {
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
 }

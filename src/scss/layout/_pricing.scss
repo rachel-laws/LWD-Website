@@ -1,0 +1,101 @@
+@use '../abstracts/' as *;
+
+//* Pricing Page
+
+.pricing {
+  padding-inline: 10vw;
+
+  @include mqMedium {
+    padding-inline: 0;
+  }
+
+  section {
+    margin-bottom: 5rem;
+
+    @include mqMobile {
+      margin-bottom: 4rem;
+    }
+  }
+
+  h1,
+  h2 {
+    margin-bottom: 3rem;
+
+    @include mqMobile {
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  a {
+    color: #3257a8;
+  }
+
+  p {
+    line-height: 1.7;
+  }
+
+  table {
+    margin-inline: auto;
+    width: 100%;
+    padding-inline: 1.5rem;
+    background: $card-bg;
+    border-collapse: collapse;
+    box-shadow: $table-shadow;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid #d7c7a3;
+  }
+
+  th,
+  td {
+    padding-block: 0.75rem;
+  }
+
+  th {
+    font-size: 1.15rem;
+    padding-inline: 0.75rem;
+    background: #d7c7a3;
+
+    &:first-of-type {
+      text-align: left;
+    }
+
+    &:last-of-type {
+      text-align: center;
+    }
+  }
+
+  tr td {
+    &:first-of-type {
+      padding-inline: 0.75rem;
+    }
+
+    &:last-of-type {
+      width: 10rem;
+      padding-right: 0.75rem;
+      text-align: right;
+
+      @include mqMobile {
+        width: min-content;
+      }
+    }
+  }
+}
+
+.pricing__card {
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2.25rem 3rem;
+
+  background: $card-bg;
+  border-radius: $card-br;
+  border: $card-border;
+  box-shadow: $card-shadow;
+
+  @include mqSmall {
+    padding: 2.25rem 1.5rem;
+  }
+}

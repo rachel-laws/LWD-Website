@@ -19,7 +19,7 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    <!-- Title / Favicon / Description -->
+    <!-- Title / Favicon / SEO -->
     <title>Lawson Web Development</title>
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/png" />
     <meta
@@ -88,114 +88,143 @@
         </div>
       </div>
     </header>
-    <main class="home">
-      <section id="intro" class="intro flex-col center">
-        <div class="intro__heading heading">
-          <img
-            src="/assets/img/intro_img.png"
-            alt="Web symbol with 3 arrows pointing upward" />
-          <h1>
-            Bring your website
-            <span class="block">
-              to the
-              <span class="special-font"> next level</span>
-            </span>
-          </h1>
-        </div>
-        <div class="intro__services">
-          <div class="intro__service flex-col">
-            <img
-              src="/assets/img/services_design.png"
-              alt="Computer outline with pencil drawing a light bulb"
-              loading="lazy" />
-            <h2>Web Design</h2>
-            <p>
-              Work with me to create an eye-catching and strategic design that
-              will highlight your business's values and aesthetics.
-            </p>
-          </div>
-          <div class="intro__service flex-col">
-            <img
-              src="/assets/img/services_develop.png"
-              alt="Computer outline with HTML code symbol"
-              loading="lazy" />
-            <h2>Web Development</h2>
-            <p>
-              Have your website developed with code (or a website builder upon
-              request) with impressive features, functionality, and performance.
-            </p>
-          </div>
-          <div class="intro__service flex-col">
-            <img
-              src="/assets/img/services_more.png"
-              alt="Computer outline with plus symbol"
-              loading="lazy" />
-            <h2>And More!</h2>
-            <p>
-              Graphic design, search engine optimization, web accessibility,
-              hosting set-up and more - Everything you need for your website can
-              be done right here.
-            </p>
-          </div>
+    <main class="pricing">
+      <section class="pricing__cost">
+        <h1>Pricing</h1>
+        <div class="pricing__card">
+          <p>
+            Both hourly and fixed rate costs can vary based on factors such as
+            the size of the project, complexity of the design, desired
+            functionality, and extra features. To obtain an accurate quote for
+            the cost of a certain project, please email
+            <strong>info@lawsonwebdevelopment.com</strong> or visit the
+            <strong>
+              <a href="https://lawsonwebdevelopment.com/contact/"> Contact </a>
+            </strong>
+            page.
+          </p>
         </div>
       </section>
-      <section id="about" class="about flex-col">
-        <div class="about__heading heading">
-          <img
-            src="/assets/svg/checkmark.svg"
-            alt="Green checkmark"
-            loading="lazy" />
-          <h2>
-            Find everything you need
-            <span class="block">
-              in
-              <span class="special-font">one place</span>
-            </span>
-          </h2>
-        </div>
-        <div class="about__list flex">
-          <ul>
-            <li>Free Consultations</li>
-            <li>Full Customization</li>
-            <li>Web Design</li>
-            <li>Graphic Design</li>
-            <li>Web Development</li>
-            <li>Search Engine Optimization</li>
-            <li>Web Accessibility</li>
-            <li>Hosting Set-Up</li>
-            <li>Updates & Maintenance</li>
-          </ul>
-          <img
-            src="/assets/img/test.png"
-            alt="3D phone and laptop models displaying Gray House Restaurant website made by Lawson Web Development"
-            loading="lazy" />
+      <section class="pricing__hourly">
+        <h2>Hourly Rates</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Hourly Rate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Web Development</td>
+              <td>$28</td>
+            </tr>
+            <tr>
+              <td>Web Design</td>
+              <td>$25</td>
+            </tr>
+            <tr>
+              <td>Shared Hosting Setup</td>
+              <td>$25</td>
+            </tr>
+            <tr>
+              <td>SEO & Performance</td>
+              <td>Free</td>
+            </tr>
+            <tr>
+              <td>*Ongoing Updates & Maintenance</td>
+              <td>$25</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="pricing__fixed">
+        <h2>Fixed Rates</h2>
+        <div class="pricing__card">
+          <p>
+            Fixed rates are available upon request. Fixed rate options with
+            pre-set prices will be coming soon.
+          </p>
+          <!-- <div class="fixed__container">
+          <div class="fixed__1page pricing__card">
+            <h3>1-Page Website</h3>
+            <div class="fixed__cost">
+              <i class="fa-solid fa-dollar-sign"></i>275.00
+            </div>
+            <ul>
+              <li>Web Design</li>
+              <li>Web Development</li>
+              <li>SEO & Performance Review</li>
+              <li>Hosting Setup</li>
+            </ul>
+          </div>
+          <div class="fixed__2page pricing__card">
+            <h3>2-Page Website</h3>
+            <div class="fixed__cost">
+              <i class="fa-solid fa-dollar-sign"></i>500.00
+            </div>
+            <ul>
+              <li>Web Design</li>
+              <li>Web Development</li>
+              <li>SEO & Performance Review</li>
+              <li>Hosting Setup</li>
+            </ul>
+          </div>
+          <div class="fixed__3page pricing__card">
+            <h3>3-Page Website</h3>
+            <div class="fixed__cost">
+              <i class="fa-solid fa-dollar-sign"></i>700.00
+            </div>
+            <ul>
+              <li>Limited Offer: 2 Free Adobe Stock Images</li>
+              <li>Web Design</li>
+              <li>Web Development</li>
+              <li>SEO & Performance Review</li>
+              <li>Hosting Setup</li>
+            </ul>
+          </div>
+          <div class="fixed__4page pricing__card">
+            <h3>4-Page Website</h3>
+            <div class="fixed__cost">
+              <i class="fa-solid fa-dollar-sign"></i>950.00
+            </div>
+            <ul>
+              <li>Limited Offer: Free Homepage Design Draft</li>
+              <li>Limited Offer: 2 Free Adobe Stock Images</li>
+              <li>Web Design</li>
+              <li>Web Development</li>
+              <li>SEO & Performance Review</li>
+              <li>Hosting Setup</li>
+            </ul>
+          </div> -->
         </div>
       </section>
-      <div id="ctaLinks" class="cta__links flex center">
-        <a
-          href="https://lawsonwebdevelopment.com/services/"
-          class="cta__button-services btn">
-          View All Services
-        </a>
-        <a
-          href="https://lawsonwebdevelopment.com/pricing/"
-          class="cta__button-pricing btn">
-          See Pricing Options
-        </a>
-        <a
-          href="https://lawsonwebdevelopment.com/contact/"
-          class="cta__button-consultation btn">
-          Free Consultations
-        </a>
-      </div>
-      <section id="homeQuote" class="home__quote flex center">
-        <p>
-          I work one-on-one with clients to create quality custom websites. By
-          knowing what goals you have for your site - and by learning about your
-          brand's values and aesthetics - I can create the ideal design and
-          functionality that will benefit your business for years to come.
-          <span>Rachel Lawson - Lawson Web Development</span>
-        </p>
+      <section class="pricing__plans">
+        <h2>Payment Plans</h2>
+        <div class="pricing__card">
+          <p>
+            Payment plans options include
+            <strong>weekly or by project milestones.</strong>
+            Invoices are sent electronically via PayPal at the frequency
+            determined by the chosen payment plan.
+          </p>
+        </div>
+      </section>
+      <section class="pricing__hosting">
+        <h2>Other Expenses</h2>
+        <div class="pricing__card">
+          <p>
+            Additional expenses for a project can include purchasing a shared
+            hosting plan, a domain name, and stock images. Websites will need to
+            be hosted using a third-party service such as Hostinger or
+            HostGator. Hosting plans are usually at least $100 per year. Domain
+            names are usually between $10 and $15 per year. Once development of
+            the project is complete, the next step would be to purchase one of
+            these plans and grant me developer access to set up the site. Any
+            stock images or paid resources requested for the project can either
+            be purchased by you or included in the invoice.
+          </p>
+        </div>
       </section>
     </main>
     <footer class="flex">

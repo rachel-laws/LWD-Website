@@ -9,5 +9,67 @@ html {
 }
 
 body {
-  background: $body-bg;
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 12.4rem;
+  background: $light-bg;
+
+  @include mqMedium {
+    padding-bottom: 24rem;
+  }
+}
+
+main {
+  max-width: 2500px;
+  margin-inline: auto;
+  padding-bottom: $main__paddingBottom;
+
+  @include mqMedium {
+    padding-bottom: $main__paddingBottom-medium;
+  }
+
+  @include mqMobile {
+    padding-bottom: $main__paddingBottom-mobile;
+  }
+}
+
+section {
+  gap: $section__gap;
+
+  margin-block: $section__marginBlock;
+  padding-inline: $section__paddingInline;
+
+  @include mqMedium {
+    gap: $section__gap-medium;
+
+    margin-block: $section__marginBlock-medium;
+    padding-inline: $section__paddingInline-medium;
+  }
+
+  @include mqMobile {
+    gap: $section__gap-mobile;
+
+    margin-block: $section__marginBlock-mobile;
+    padding-inline: $section__paddingInline-mobile;
+  }
+
+  @include mqSmall {
+    padding-inline: $section__paddingInline-small;
+  }
+}
+
+.services section {
+  padding-inline: 14vw;
+
+  @include mqMedium {
+    padding-inline: $section__paddingInline-medium;
+  }
+
+  @include mqMobile {
+    padding-inline: $section__paddingInline-mobile;
+  }
+
+  @include mqSmall {
+    padding-inline: $section__paddingInline-small;
+  }
 }

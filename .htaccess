@@ -1,1 +1,19 @@
 DirectoryIndex ./dist/html/index.html
+
+RewriteEngine On
+
+# Exclude the JavaScript files from rewriting
+RewriteRule ^js/(.*)$ - [L]
+
+# URL Rewrites
+RewriteRule ^services/$ /dist/html/services.html
+RewriteRule ^pricing/$ /dist/html/pricing.html
+RewriteRule ^contact/$ /dist/html/contact.html
+RewriteRule ^terms-of-service/$ /dist/html/terms.html
+RewriteRule ^privacy-policy/$ /dist/html/privacy.html
+RewriteRule ^thank-you/$ /dist/html/thankyou.html
+
+# Redirect URLs without trailing slash to URLs with trailing slash
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*[^/])$ %{REQUEST_URI}/ [L,R=301]

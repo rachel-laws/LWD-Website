@@ -10,39 +10,27 @@
 
 // Media Queries
 
-// < Small Mobile Devices
-@mixin mqXSmall {
+@mixin mqSmall {
   @media all and (max-width: 400px) {
     @content;
   }
 }
 
-// < Mobile Devices
-@mixin mqSmall {
-  @media all and (max-width: 480px) {
+@mixin mqMobile {
+  @media all and (max-width: 750px) {
     @content;
   }
 }
 
-// < Tablets
 @mixin mqMedium {
-  @media all and (max-width: 768px) {
+  @media all and (max-width: 1080px) {
     @content;
   }
 }
 
-// > Laptops
+//
 @mixin mqLarge {
-  @media all and (min-width: 1024px) {
+  @media all and (min-width: 1800px) {
     @content;
   }
 }
-
-// > Desktops
-@mixin mqXLarge {
-  @media all and (min-width: 1200px) {
-    @content;
-  }
-}
-
-// Animations

@@ -2,14 +2,54 @@
 
 //* Variables
 
-// Margins
-
 // Padding
 
-// Transitions
+$main__paddingBottom: 4rem;
+$main__paddingBottom-medium: 2rem;
+$main__paddingBottom-mobile: 3rem;
+
+// Margins
+
+$section__marginBlock: 4rem 7rem;
+$section__marginBlock-medium: 3rem 4rem;
+$section__marginBlock-mobile: 3rem 4rem;
+
+$section__paddingInline: 20vw;
+$section__paddingInline-medium: 18vw;
+$section__paddingInline-mobile: 2.5rem;
+$section__paddingInline-small: 1rem;
+
+// Gap
+
+$section__gap: 6rem;
+$section__gap-medium: 4rem;
+$section__gap-mobile: 3rem;
 
 // Borders
 
+$standard-border: 2px solid $gold;
+$btn-border: 1px solid $gold;
+$card-border: 1px solid #d2d2d2bd;
+$card-outline: 1px solid $outline;
+
 // Shadows
 
-// Misc.
+$nav-shadow: 0px 0px 15px rgb(0 0 0 / 0.3);
+$section-shadow: 0px 0px 15px rgb(0 0 0 / 0.15);
+$card-shadow: 0px 0px 10px 1px rgba(0 0 0 / 0.1);
+$btn-shadow: -3px 3px 6px #000;
+$small-shadow: 2px 2px 5px rgb(0 0 0 / 0.2);
+$table-shadow: 0px 0px 5px rgba(0 0 0 / 0.06);
+
+// Typography
+
+$card-lh: 1.8;
+
+// Border Radius
+
+$card-br: 3px;
+
+// Transitions
+
+$ease-in: 200ms ease-in;
+$ease: 150ms ease;

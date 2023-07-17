@@ -13,7 +13,6 @@ body {
 
 img {
   display: block;
-  width: 100%;
   user-select: none;
 }
 
@@ -41,4 +40,5 @@ input {
 
 textarea {
   resize: none;
+  font-family: inherit;
 }

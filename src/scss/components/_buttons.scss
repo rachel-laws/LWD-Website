@@ -1,3 +1,131 @@
 @use '../abstracts/' as *;
 
 //* Buttons
+
+.btn,
+button,
+input[type='submit'] {
+  font-family: 'Roboto Slab', serif;
+  color: $white-txt;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-align: center;
+  border: $btn-border;
+  transition: $ease;
+  cursor: pointer;
+}
+
+.btn {
+  box-shadow: $btn-shadow;
+  font-size: 1.2rem;
+}
+
+// Home Call-to-Action Buttons
+
+.cta__links .btn {
+  padding: 0.9rem 1.75rem;
+  background: $dark-bg;
+  text-shadow: -2px 2px black;
+  min-width: max-content;
+
+  &:hover,
+  &:focus-visible {
+    border-color: $white-txt;
+  }
+
+  &:active {
+    transform: translateX(-4px);
+  }
+}
+
+// Header Button
+
+.header__button {
+  padding: 0.5rem 1.75rem 0.8rem;
+  text-shadow: -2px 2px black;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.75px;
+  background: $dark-bg;
+  border: $btn-border;
+  outline: 1px solid $outline;
+  text-align: center;
+  outline-offset: -7px;
+  animation: glow 5s ease infinite 5s;
+  transition: $ease;
+
+  &:hover {
+    border-color: $white-txt;
+    outline-color: $white-txt;
+    box-shadow: 0px 0px 10px #fef8e7, 0px 0px 20px #fef8e7,
+      0px 0px 35px #fff9e8df, 0px 0px 50px #fff9e8c9 !important;
+  }
+
+  &:active {
+    background: $gold;
+  }
+
+  i {
+    font-size: 1.5rem;
+    vertical-align: 0.05em;
+  }
+}
+
+// Nav Button
+
+.nav__toggle {
+  position: absolute;
+  display: none;
+  z-index: 999;
+  right: 1.5rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  margin-bottom: 7px;
+  background: transparent;
+  border: none;
+  font-size: 1.7rem;
+  color: $white-txt;
+
+  transition: $ease;
+
+  &:hover,
+  &:focus-visible {
+    transform: scale(1.13);
+  }
+
+  &:active {
+    transform: scale(1);
+  }
+
+  @include mqMobile {
+    display: block;
+  }
+
+  @include mqSmall {
+    right: 0.75rem;
+  }
+}
+
+// Footer Consultation
+
+.footer__btn {
+  margin-bottom: 0.5rem;
+  padding: 1rem 1.5rem;
+
+  @include mqMobile {
+    margin-bottom: 1.1rem;
+    padding: 1rem 1rem;
+    font-size: 1.1rem;
+  }
+
+  &:hover {
+    color: $black-txt;
+    background: $gold;
+    border-color: $dark-bg;
+  }
+
+  &:active {
+    transform: translateX(4px);
+    background: $light-gold;
+  }
+}

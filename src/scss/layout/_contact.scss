@@ -1,0 +1,85 @@
+@use '../abstracts' as *;
+
+//* Contact Page
+
+// Have a project in mind?
+.cta__question-contact {
+  width: max-content;
+  gap: 1rem;
+  width: 100%;
+  margin-block: 4rem 3rem;
+  margin-left: 0.25rem;
+
+  @include mqMobile {
+    flex-direction: column;
+    margin-block: 2rem;
+  }
+
+  p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.6rem;
+    color: $gray-bg;
+
+    @include mqMobile {
+      font-size: clamp(1rem, 7vw, 2rem);
+    }
+  }
+
+  img {
+    width: 3.5rem;
+    background: radial-gradient(#ffdf53cf, #ffe9899e, transparent 70%);
+
+    @include mqMobile {
+      width: 5rem;
+    }
+  }
+}
+
+// Bottom contact info
+.contact__methods {
+  justify-content: center;
+  gap: 1rem;
+  max-width: 53rem;
+  width: calc(75% + 3rem);
+  padding-block: 2rem;
+  padding-left: 3.25rem;
+  color: $white-txt;
+  letter-spacing: 0.75px;
+  background: $gray-bg;
+  border-radius: 0px;
+  box-shadow: $card-shadow;
+
+  @include mqMedium {
+    width: calc(3rem + 100%);
+  }
+
+  @include mqMobile {
+    justify-content: flex-start;
+    flex-direction: column;
+    max-width: 50rem;
+    width: 100%;
+    margin-left: 0rem;
+    padding: 1.5rem 2rem 1.5rem;
+  }
+
+  @include mqSmall {
+    width: 100%;
+    padding: 1.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  i {
+    font-size: 1.3rem;
+    margin-right: 2px;
+    transform: translateY(2px);
+
+    @include mqMobile {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .fa-linkedin {
+    font-size: 1.4rem;
+  }
+}
